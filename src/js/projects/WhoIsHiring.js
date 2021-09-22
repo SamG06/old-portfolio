@@ -3,6 +3,15 @@ const whoIsHiring = /*html*/ `
 
 <p>Tools used: Node JS, Puppeter, React</p>
 
+<div class="project-links">
+  <a href="https://screenshareroom.netlify.app/" target="_blank" rel="noopener noreferrer">
+    View Live
+  </a>
+  <a href="https://github.com/SamG06/WhoIsHiring-Job-Board" target="_blank" rel="noopener noreferrer">
+    View Code
+  </a>
+</div>
+
 <h3>What is it?</h3>
 
 <p>This project is a web app used to help navigate the <a href="https://news.ycombinator.com/submitted?id=whoishiring" target="_blank" rel="noopener noreferrer">whoishiring thread</a> on Hacker News. 

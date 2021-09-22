@@ -145,11 +145,11 @@ function projectToShow() {
 window.showProject = (index) => {
   // Prevent multiple pushes in history
   if (projectIndex() === index.toString()) {
+    document.title = "Portfolio | Samuel Graham";
     return;
   }
-
-  history.pushState({ project: index }, "project name", `${index}`);
-  document.title = "project name";
+  history.pushState({ project: index }, projects[index].title, `${index}`);
+  document.title = projects[index].title;
   projectToShow();
 };
 
@@ -166,6 +166,8 @@ window.addEventListener("popstate", ({ state }) => {
 // Scrolling
 
 window.scrollToAnchor = (area) => {
+  history.pushState("", "", `/`);
+  projectToShow();
   document.getElementById(`${area}Anchor`).scrollIntoView({
     behavior: "smooth",
   });

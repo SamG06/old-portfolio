@@ -95,17 +95,19 @@ terminalInput.addEventListener("keyup", (e) => {
     } else if (command === "goto") {
       const area = e.target.value.split(" ")[1];
       if (area) {
-        if (area.toLowerCase() === "about") {
-          document.querySelector("#aboutAnchor").scrollIntoView({
+        const areaReady = area.toLowerCase().trim();
+        const scrollThere = (id) => {
+          document.getElementById(id).scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
-        }
-        if (area.toLowerCase() === "projects") {
-          document.querySelector("#projectsAnchor").scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+        };
+        if (areaReady === "about") {
+          scrollThere("aboutAnchor");
+        } else if (areaReady === "projects") {
+          scrollThere("projectsAnchor");
+        } else if (areaReady === "home") {
+          scrollThere("homeAnchor");
         } else {
           commandError = `${fullText.substr(
             fullText.indexOf(" ") + 1
