@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Primary Meta Tags -->
+  <title>Portfolio | Samuel Graham</title>
+  <meta name="title" content="Portfolio | Samuel Graham" />
+  <meta name="description" content="Web developer based in NYC" />
+  <meta name="theme-color" content="#371c3e">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.samuelgraham.dev/" />
+  <meta property="og:title" content="Portfolio | Samuel Graham" />
+  <meta property="og:description" content="Web developer based in NYC" />
+  <meta property="og:image" content="" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.samuelgraham.dev/" />
+  <meta property="twitter:title" content="Portfolio | Samuel Graham" />
+  <meta property="twitter:description" content="Web developer based in NYC" />
+  <meta property="twitter:image" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+    <!-- inject-style src="fonts.css" -->
+      <!-- inject-style src="main.css" -->
+      <link rel="stylesheet" href="css/main.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <div id="homeAnchor" class="anchor"></div>
+  <nav>
+    <div class="links-container">
+      <div class="links">
+        <a onclick="scrollToAnchor('home')">HOME</a>
+        <a onclick="scrollToAnchor('about')">ABOUT</a>
+        <a onclick="scrollToAnchor('projects')">PROJECTS</a>
+      </div>
+      <div class="theme-toggle"></div>
+    </div>
+  </nav>
+  <div class="homepage">
+
+  <main>
+    <div class="content">
+      <h1>Samuel Graham</h1>
+      <p class="sub-text">
+        I’m a front-end focused web developer based in the United States. With a bit of back-end knowledge.
+      </p>
+
+      <div class="cta">
+        <a class="about-link" onclick="scrollToAnchor('about')">About Me</a>
+        <a href="https://github.com/SamG06" target="_blank" rel="noopener noreferrer" class="github-link">My Github</a>
+      </div>
+    </div>
+    <div id="siteTerminal" class="terminal">
+      <div class="terminal-window-top">
+        Terminal Navigation
+      </div>
+      <div class="window-top-separator"></div>
+      <p id="loggedIn"></p>
+      <p id="goto"></p>
+      <p id="github"></p>
+      <div id="previousCommands"></div>
+      <div class="terminal-input-container">
+        <label id="terminalLabel" for="terminalInput"></label>
+        <div class="caret-container">
+          <div id="caret" class="caret"></div>
+          <input id="terminalInput" class="terminal-typing" type="text" spellcheck="false">
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <section id="about" class="about">
+    <div id="aboutAnchor" class="anchor"></div>
+    <div class="background-about"></div>
+    <h3>About Me</h3>
+    <p class="about-text">My name is Samuel and I enjoy developing for the web. I first got interested in web development in 2016 messing with HTML, CSS, JavaScript, PHP and SQL. Over the years I’ve accumulated knowledge and experience with various tools and common web development practices. I always keep up with what’s happening in the web development community and love to learn new things. Below are some skills I have been focusing on the most recently but I have experience with many different libraries/frameworks/plugins etc. </p>
+    <div class="technologies">
+      <h4>My Technologies</h4>
+      <div id="techList" class="technology-list">
+        <!--JavaScript Generated-->
+      </div>
+    </div>
+
+  </section>
+  <section class="projects">
+    <div id="projectsAnchor" class="anchor"></div>
+    <h3>Projects</h3>
+    <!--JavaScript Generated-->
+    <div class="projects-container">
+
+    </div>
+  </section>
+</div>
+</div>
+  <article class="project-display"></article>
+  <footer>Made With 💜</footer>
+</body>
+
+</html>
