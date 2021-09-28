@@ -238,6 +238,7 @@ section {
 .terminal-input-container label {
   width: 135px;
   flex-grow: 1;
+  min-width: 135px;
 }
 
 input.terminal-typing {
@@ -422,7 +423,9 @@ footer {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 40.25%;
+  padding-bottom: 56.25%;
+  width: 100%;
+  background: black;
 }
 
 iframe {
@@ -434,7 +437,7 @@ iframe {
 }
 
 .homepage {
-  width: 96%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 700px) {
@@ -751,5 +754,25 @@ iframe {
 
   .links a:active {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    text-align: center;
+  }
+
+  .about-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .terminal p {
+    text-align: left;
+  }
+
+  nav {
+    display: none;
   }
 }

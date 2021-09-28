@@ -167,6 +167,8 @@ window.addEventListener("popstate", ({ state }) => {
 
 window.scrollToAnchor = (area) => {
   history.pushState("", "", `/`);
+  document.title = "Portfolio | Samuel Graham";
+
   projectToShow();
   document.getElementById(`${area}Anchor`).scrollIntoView({
     behavior: "smooth",

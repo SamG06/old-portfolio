@@ -1,3 +1,5 @@
+import { videoGenerator } from "./pieces";
+
 const screenShareRoom = /*html*/ `
 <h1> Screen Share Room</h1>
 
@@ -11,30 +13,7 @@ const screenShareRoom = /*html*/ `
     View Code
   </a>
 </div>
-<div class="video-wrapper">
-  <iframe
-    src="https://iframe.videodelivery.net/299999106b10dc42c41f5e734f298963"
-    style="border: none;width: 70%;max-width:1080px"
-    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-    allowfullscreen="true"
-    id="stream-player"
-  ></iframe>
-
-  <script src="https://embed.videodelivery.net/embed/sdk.latest.js"></script>
-
-  <!-- Your JavaScript code below-->
-  <script>
-    const player = Stream(document.getElementById('stream-player'))
-    player.addEventListener('play', () => {
-      console.log('playing!')
-    })
-    player.play().catch(() => {
-      console.log('playback failed, muting to try again')
-      player.muted = true
-      player.play()
-    })
-  </script>
-</div>
+${videoGenerator("299999106b10dc42c41f5e734f298963")}
 
 <h3>What It Does</h3>
 
