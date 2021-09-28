@@ -238,7 +238,7 @@ section {
 .terminal-input-container label {
   width: 135px;
   flex-grow: 1;
-  min-width: 135px;
+  min-width: 105px;
 }
 
 input.terminal-typing {
