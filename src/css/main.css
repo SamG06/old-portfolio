@@ -73,7 +73,7 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100;
+  background: #0f0f0f;
 }
 
 /* Handle */
@@ -438,6 +438,8 @@ iframe {
 
 .homepage {
   width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -510,7 +512,7 @@ iframe {
 }
 .technology-list ul {
   list-style-type: none;
-  color: #cecece;
+  color: #dbdbdb;
 }
 
 .technology-list li {
@@ -718,6 +720,7 @@ iframe {
     justify-content: center;
     height: 60px;
     user-select: none;
+    padding-left: 30px;
   }
 
   #previousCommands {
@@ -758,14 +761,14 @@ iframe {
 }
 
 @media only screen and (max-width: 600px) {
-  p {
+  .sub-text {
     text-align: center;
   }
-
   .about-text {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .terminal p {

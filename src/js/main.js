@@ -82,7 +82,7 @@ const projectEL = ({ title, desc, projectResources }, i) => {
    
       <div  class="project-image-container">
         <div class="purple-overlay"></div>
-        <img src="images/project/${projectResources}/card.png"/>
+        <img src="images/project/${projectResources}/card.png" alt="image of project"/>
       </div>
       <div class="info">
         <h3>${title}</h3>
