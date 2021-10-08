@@ -1,3 +1,11 @@
+
+/* THIS CODE IS FROM https://github.com/component/textarea-caret-position
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Jonathan Ong me@jongleberry.com
+ */
+
 !(function () {
   var p = [
       "direction",
