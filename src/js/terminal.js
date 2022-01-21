@@ -119,10 +119,14 @@ terminalInput.addEventListener("keyup", (e) => {
     }
 
     const previous = stringToFragment(
-      `<div>sam's-site:~ <span class="gray-out">${e.target.value}</span>
-      <div class="command-error">${commandError}</div>
+      `<div>sam's-site:~ <span class="gray-out"></span>
+      <div class="command-error"></div>
       </div>`
     );
+    
+    previous.querySelector('.gray-out').textContent = e.target.value;
+    previous.querySelector('.command-error').textContent = commandError;
+    
     previousCommands.append(previous);
     terminalInput.value = "";
     moveCaret();
