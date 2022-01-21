@@ -127,7 +127,8 @@ terminalInput.addEventListener("keyup", (e) => {
     previous.querySelector('.gray-out').textContent = e.target.value;
     previous.querySelector('.command-error').textContent = commandError;
     
-    previousCommands.append(previous);
+    console.log(previous);
+    // previousCommands.append(previous);
     terminalInput.value = "";
     moveCaret();
   }
